@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+
+	<title>Contact</title>
+	<!-- Loading third party fonts -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,600,700" rel="stylesheet"
+		type="text/css">
+	<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<!-- Loading main css file -->
+	<!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+	<!-- <link rel="stylesheet" href="style.css"> -->
+
+	<!--[if lt IE 9]>
+		<script src="js/ie-support/html5.js"></script>
+		<script src="js/ie-support/respond.js"></script>
+		<![endif]-->
+	<style>
+		body {
+			background-color: black;
+			color: white;
+		}
+
+		.left {
+			/*border:2px solid red;*/
+			color: white;
+			position: absolute;
+			display: inline-block;
+			left: 24px;
+			top: 8px;
+			animation-name: left;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes left {
+			from {
+				color: rgb(245, 19, 177);
+				font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			}
+
+			to {
+				color: white;
+				font-family: serif;
+			}
+		}
+
+
+
+		.navbar {
+			display: inline-block;
+			position: fixed;
+		}
+
+		.navbar li {
+			display: inline-block;
+			/*padding: 12px;*/
+			font-size: 20px;
+			/*margin: 3px;*/
+		}
+
+		.navbar li a {
+			color: white;
+			list-style: none;
+			text-decoration: none;
+			padding: 16px 17px;
+			animation-name: navin;
+			animation-duration: 1s;
+			font-size: 25px;
+			bottom: 5px;
+			animation-iteration-count: infinite;
+		}
+
+		.navbar li a:hover {
+			background-color: green;
+			font-size: 28px;
+			border-radius: 23px;
+		}
+
+
+
+		.mid {
+			/* border:2px solid blue; */
+			color: white;
+			display: block;
+			position: absolute;
+			width: 100%;
+			left: 304px;
+			top: 18px;
+			padding: 0px 72px;
+			/* margin: 12px auto; */
+		}
+
+
+		.navbar {
+			position: relative;
+		}
+
+
+
+		#home {
+			border: 2px solid black;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			/* padding: 3px 200px; */
+			/* top: 45px; */
+			/* margin: 200px; */
+
+
+		}
+
+
+
+
+		h2 {
+			font-size: 45px;
+			display: flex;
+			align-self: start;
+			color: burlywood;
+		}
+
+		#second {
+			margin-top: 156px;
+			padding: 23px;
+			border: 2px solid chartreuse;
+			margin-left: 34px;
+			width: 50%;
+			color: darkblue;
+			background-color: darkkhaki;
+			border-radius: 23px;
+		}
+
+		#second h1 {
+			font-size: 34px;
+			animation-name: second;
+			animation-duration: 0.5s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes second {
+			from {
+				color: red;
+			}
+
+			to {
+				color: white;
+			}
+		}
+
+		.history {
+			/* border: 2px solid red; */
+			margin: 113px;
+			padding: 3px;
+			color: white;
+			font-size: 29px;
+
+		}
+
+		#X {
+			color: white;
+			/* border: 2px solid red; */
+			margin-top: 150px;
+			width: 50%;
+			/* text-align: center; */
+		}
+			.btn {
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            /*padding: */
+            border: 2px solid grey;
+            border-radius: 15px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            background-color: #ad1a43;
+        }
+
+        .container {
+            border: 2px solid white;
+            border-radius: 15px;
+            width: 38%;
+            margin: 317px 516px;
+            padding: 44px;
+
+        }
+
+        .form-grp input {
+            text-align: center;
+            border-radius: 15px;
+            display: block;
+            width: 72%;
+            padding: 10px;
+            margin: 2px auto;
+            border: 2px solid black;
+            font-size: 22px;
+
+
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 77%;
+            margin: 9px auto;
+            padding: 9px;
+        }
+
+        @keyframes navin {
+            from {
+                /* font-size: 45px; */
+                color: darkblue;
+            }
+
+            to {
+                /* font-size :70px; */
+                color: chartreuse;
+            }
+		}
+		footer{
+			color: white;
+			font-weight: bolder;
+			/* border: 2px solid red; */
+			margin:33px;
+
+		}
+		
+	</style>
+
+
+
+
+
+
+</head>
+
+<body>
+
+	<header class="header">
+
+		<div class="left">
+			<h1 id="h1-head">SETHIYA CREATION</h1>
+		</div>
+		<div class="mid">
+
+			<ul class="navbar">
+				<li><a href="#" class="menu-link">Home</a></li>
+				<li><a href="about.html" target="_blank">About</a></li>
+				<li><a href="#services" class="menu-link">Services</a></li>
+				<li><a href="#services" class="menu-link">Team</a></li>
+				<li><a href="#portfolio" class="menu-link">Portfolio</a></li>
+				<li><a href="#testimonial" class="menu-link">Testimonial</a></li>
+
+				<li><a href="#contact" class="menu-link">Contact</a></li>
+			</ul>
+
+		</div>
+
+
+	</header>
+
+	<div class="container">
+		<h1>CONTACT US</h1>
+		<form>
+			<div class="form-grp">
+				<input type="text" name="" placeholder="Enter your Name">
+			</div>
+
+			<div class="form-grp">
+				<input type="email" name="" placeholder="Enter your Email">
+
+			</div>
+			<div class="form-grp">
+				<input type="text" name="" placeholder="Enter your Gender">
+			</div>
+
+			<div class="form-grp">
+				<input type="text" name="" placeholder="Enter your Mobile no.">
+			</div>
+
+			<button class="btn">Submit</button>
+
+		</form>
+
+		
+		<footer>
+			Company Name:Sethiya Creation Agency<br>
+			Address:vigyan Nagar,kota ,rajasthan,india<br>
+			Contact no: 1234567899<br>
+
+
+
+		</footer>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            padding: 0;
+            width: 100%;
+            margin: 0px;
+            color: white;
+            /* padding: 0px; */
+            /* background: url("gym.jpg"); */
+            background-color: black;
+            /* width: 100px; */
+            /* height: 114vh; */
+
+
+            font-style: cursive;
+
+
+        }
+
+
+        .left {
+            /*border:2px solid red;*/
+            color: white;
+            position: absolute;
+            display: inline-block;
+            left: 24px;
+            top: 8px;
+            animation-name: left;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes left {
+            from {
+                color: rgb(245, 19, 177);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            to {
+                color: white;
+                font-family: serif;
+            }
+        }
+
+
+
+        .navbar {
+            display: inline-block;
+            position: fixed;
+        }
+
+        .navbar li {
+            display: inline-block;
+            /*padding: 12px;*/
+            font-size: 20px;
+            /*margin: 3px;*/
+        }
+
+        .navbar li a {
+            color: white;
+            list-style: none;
+            text-decoration: none;
+            padding: 16px 17px;
+            animation-name: navin;
+            animation-duration: 1s;
+            font-size: 25px;
+            bottom: 5px;
+            animation-iteration-count: infinite;
+        }
+
+        .navbar li a:hover {
+            background-color: black;
+            font-size: 28px;
+            border-radius: 23px;
+        }
+
+
+
+        .mid {
+            /* border:2px solid blue; */
+            color: white;
+            display: block;
+            position: absolute;
+            width: 100%;
+            left: 304px;
+            top: 18px;
+            padding: 0px 72px;
+            /* margin: 12px auto; */
+        }
+
+
+
+        .navbar {
+            position: relative;
+        }
+
+
+
+        #home {
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* padding: 3px 200px; */
+            /* top: 45px; */
+            /* margin: 200px; */
+
+
+        }
+
+
+        body::before {
+            content: " ";
+            background: url("banner1.jpg") no-repeat center center/cover;
+
+            position: absolute;
+
+
+            z-index: -1;
+            /* opacity: 0.9; */
+            width: 100%;
+            height: 100vh;
+
+
+            /* margin-left: 333px;  */
+            /* margin-top: 70px; */
+            /* border-radius: 13px; */
+        }
+
+        h2 {
+            font-size: 45px;
+            display: flex;
+            align-self: start;
+            color: burlywood;
+        }
+
+        #second {
+            margin-top: 156px;
+            padding: 23px;
+            border: 2px solid chartreuse;
+            margin-left: 34px;
+            width: 50%;
+            color: darkblue;
+            background-color: darkkhaki;
+            border-radius: 23px;
+        }
+
+        #second h1 {
+            font-size: 34px;
+            animation-name: second;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes second {
+            from {
+                color: red;
+            }
+
+            to {
+                color: white;
+            }
+        }
+
+   
+    </style>
+</head>
+
+<body>
+    <!-- <img  id="bg" src="b1.jpg" alt=""> -->
+    <header class="header">
+
+        <div class="left">
+            <h1 id="h1-head">SETHIYA CREATION</h1>
+        </div>
+        <div class="mid">
+
+            <ul class="navbar">
+                <li><a href="#" class="menu-link">Home</a></li>
+                <li><a href="about-us.html" target="_blank">About</a></li>
+                <li><a href="service.html" target="_blank">Services</a></li>
+                <li><a href="service." target="_blank">Team</a></li>
+                <li><a href="#portfolio" target="_blank">Portfolio</a></li>
+                <li><a href="#testimonial" target="_blank">Testimonial</a></li>
+
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+                <li><a href="faq.html" target="_blank">FAQ</a></li>
+            </ul>
+
+        </div>
+        <!-- <div class="right"> -->
+        <!-- <button class="btn">Call Us Now</button> -->
+        <!-- <button class="btn">Email Us</button> -->
+        <!-- </div> -->
+
+    </header>
+    <section id="home">
+
+
+    </section>
+    <section id="second">
+        <h1>Welcome To Sethiya Travelling Agency</h1>
+
+        <p>TO TRAVEL IS TO LIVE...</p>
+
+    </section>
+
+
+
+
+</body>
+
+</html>
